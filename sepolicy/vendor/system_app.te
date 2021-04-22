@@ -25,3 +25,8 @@ allow system_app sysfs_battery_supply:dir { search };
 allow system_app sysfs_battery_supply:file { read };
 allow system_app sysfs_battery_supply:file { open };
 allow system_app sysfs_battery_supply:file { getattr };
+
+# ZRAM
+allow system_app sysfs_zram:file { open };
+
+
